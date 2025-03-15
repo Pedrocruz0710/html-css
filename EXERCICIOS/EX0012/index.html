@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este videos esta hospedado no meu proprio servidor</p>
+    <video src="midia/meu video mp4.mp4" width="720" controls></video>
+    <br>
+    <video poster="imagens/venom.jpg" width="720" controls>
+      <source src="midia/meu video mp4.mp4" type="video/mp4">
+      <source src="midia/meu video webm.webm" type="video/weebm">
+      <source src="midia/meu video ogv.ogv" type="video/ogv">
+    </video>
+    <p><strong>Se seu navegador não é compativel com algum tipo de video, ele altera o formato automatico assim.</strong></p>
+    <h1>Inserindo videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rx8EhkXk9zs?si=Fu6iuVrNQekFUE5v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Inserindo video com vimeo</h1>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/696183822?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:62%;height:62%;" title="The Real Real - &#039;What Happens Now?&#039; Animation"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>
