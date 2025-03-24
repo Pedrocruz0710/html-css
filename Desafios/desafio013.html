@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 300px;
+        }
+
+        td, th{
+           border: 2px solid black;
+           
+            padding: 10px;
+            text-align: center;
+        }
+        #tabela2{
+            border-collapse: collapse;
+        }
+        .cor{
+            color: white;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <Table>
+        <tr>
+            <td>1</td>
+            <td >2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            
+        </tr>
+        <tr>
+            <td colspan="3" style="text-align: center;">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2" style="text-align: center;">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+        </table>
+        <table style="margin: 50px 0px;">
+            <tr>
+                <td colspan="4">A</td>
+                <td rowspan="4">B</td>
+            </tr>
+            <tr>
+                <td rowspan="4">C</td>
+                <td>D</td>
+                <td>E</td>
+                <td>F</td>
+            </tr>
+            <tr>
+                <td>G</td>
+                <td>I</td>
+                <td>I</td>
+            </tr>
+            <tr>
+                <td>J</td>
+                <td>K</td>
+                <td>L</td>
+            </tr>
+            <tr>
+                <td colspan="4">M</td>
+            </tr>
+        </table>
+        <table id="tabela2">
+            <tr class="cor">
+                <th rowspan="2" scope="col">Area</th>
+                <th rowspan="2" scope="col">Disciplina</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Media</th>
+            </tr>
+            <tr>
+                <th class="cor" scope="col">Nota 1</th>
+                <th class="cor" scope="col">Nota 2</th>
+            </tr>
+            <tr>
+                <th rowspan="4" scope="row">Exatas</th>
+                <td>Matematica</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Quimíca</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr  class="cor">
+                <th colspan="4" scope="row">Media de exatas</th>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                 <th rowspan="2" scope="rowgroup">Humanas</th>
+                 <td>história</td>
+                 <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografiia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr  class="cor">
+                <th colspan="4" scope="row">Media de Humana</th>
+                <td>0.0</td>
+            </tr>
+        </table>
+
+</body>
+</html>
