@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+html,body{
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    margin: 0px;
+}
+
+.teste{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao{
+    width: 250px;
+    height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.288);
+    transition: all 0.5s ease 0s;
+    cursor:pointer
+    outline: none;
+}
+
+.botao:hover{
+    background-color: rgb(32, 209, 150);
+    box-shadow: 0px 15px 20px rgb(9, 59, 42);;
+   transform: translateY(-7px);
+    color: white;
+    
